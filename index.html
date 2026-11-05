@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Amanuel Misganaw, Information Systems student at Wollo University.">
+  <title>Amanuel Misganaw | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Amanuel Misganaw</a>
+    <button id="menuBtn" class="icon-btn menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="Switch dark or light theme">Dark</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <h1 id="greeting">Hello, I'm Amanuel.</h1>
+        <p class="lead">Third-year Information Systems student at Wollo University, Kombolcha Institute of Technology. I am also a graphic designer and video editor who enjoys creativity and technology.</p>
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+      <img src="images/profile.jpg" alt="Portrait of Amanuel Misganaw smiling, wearing a beige sweater over a white collared shirt" width="260" height="260">
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>My name is Amanuel, and I am a third-year Information Systems student. I am also a graphic designer and video editor who enjoys creativity and technology.</p>
+      <p>My career goal is to become a skilled software developer and build innovative solutions that make a positive impact on people's lives. I also want to keep growing my skills in technology, design, and video editing, and keep exploring new opportunities.</p>
+      <p><strong>Interests:</strong> software development, graphic design, video editing, databases.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Technical</h3>
+      <ul class="skill-list">
+        <li><span>HTML5</span><div class="bar"><div class="fill" data-level="85"></div></div></li>
+        <li><span>CSS3</span><div class="bar"><div class="fill" data-level="75"></div></div></li>
+        <li><span>JavaScript</span><div class="bar"><div class="fill" data-level="60"></div></div></li>
+        <li><span>Git and GitHub</span><div class="bar"><div class="fill" data-level="50"></div></div></li>
+        <li><span>Graphic design</span><div class="bar"><div class="fill" data-level="80"></div></div></li>
+        <li><span>Video editing</span><div class="bar"><div class="fill" data-level="80"></div></div></li>
+      </ul>
+      <h3>Soft skills</h3>
+      <p>Creativity, teamwork, time management, continuous learning.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="database">Database</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-category="database">
+          <h3>Database Management System</h3>
+          <p>A system for storing and managing data, built to practice database design and queries.</p>
+          <button class="link-btn" data-title="Database Management System" data-text="I designed this project to practice storing, organizing and retrieving data using a database.">Details</button>
+        </article>
+        <article class="card" data-category="web">
+          <h3>Personal Portfolio Website</h3>
+          <p>This responsive website, built with HTML5, CSS3 and JavaScript, with a theme switch and a validated contact form.</p>
+          <button class="link-btn" data-title="Personal Portfolio Website" data-text="This site shows my background, skills and projects. It has a mobile menu, dark mode, project filter and form validation.">Details</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li><strong>Wollo University, Kombolcha Institute of Technology</strong><br>BSc in Information Systems, 3rd year. Developed practical knowledge of programming, databases, and software development.</li>
+        </ol>
+      <h3>Achievements</h3>
+      <ul>
+        <li>Add a certificate, award, or activity here.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rofiyoftahi@gmail.com">rofiyoftahi@gmail.com</a> · Kombolcha, Ethiopia</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required minlength="3" autocomplete="name">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <small class="error" id="emailError"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <dialog id="modal">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <button id="modalClose" class="btn">Close</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 Amanuel Misganaw. Wollo University, Internet Programming I (INSY3061).</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
