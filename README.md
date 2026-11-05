@@ -25,4 +25,4 @@ A responsive personal portfolio with Home, About, Skills, Projects, Education an
 2. Open `index.html` in a browser, or use the VS Code Live Server extension.
 
 ## Author
-Amanuel Misganaw, 3rd-year Information Systems student. GitHub: https://github.com/YOUR-USERNAME/personal-website
+Amanuel Misganaw, 3rd-year Information Systems student. GitHub: https://github.com/yofta-amanuel/personal-website
